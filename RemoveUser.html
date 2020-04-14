@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Update User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./resourses/lib/w3.css">
+    <script src="./popup.js" charset="utf-8"></script>
+
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+    }
+    .nav-top{
+      height: 50px;
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      background-color: #620266;
+    }
+    .nav-top a{
+      text-decoration: none;
+    }
+    .nav-top a:hover{
+      background-color:#290029;
+    }
+    .nav-top #home{
+      padding:15px;
+      float: left;
+      color: #ffffff;
+    }
+    .nav-top #login{
+      padding:15px;
+      float: right;
+      color: #ffffff;
+    }
+  .side-nav{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: 91%;
+  left: 0px;
+  border: 0px solid black;
+  }
+  .side-nav ul{
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  list-style-type: none;
+  background-color: #f7dfff;
+  text-align: center;
+  }
+  .s-menu li a{
+  display: block;
+  color: #000;
+  padding: 16px 10px 16px 10px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .s-menu li a:hover{
+  color: white;
+  background-color: #620266;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(134, 7, 223, 0.58);
+  }
+.containter{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border-left: 5px solid #620266;
+  background-color:  #f1f1f1;
+  text-align: center;
+  left: 200px;
+  background-size: 100% 100%;
+  right: 0px;
+  height: 85%;
+  width: auto;
+    background-image: url("./img/UMUpdate.jpg");
+  overflow: auto;
+}
+.footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 8%;
+  background-color:#620266;
+  text-align: center;
+  padding-top: 15px;
+}
+.footer a{
+  text-decoration: none;
+  color: #fafaff;
+}
+
+.search{
+  display: block;
+}
+
+.search input[type=text]{
+    width: 50%;
+    margin: 10px 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    background-image: url('./img/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search input[type=text]:focus {
+    width: 80%;
+}
+
+.search input[type=submit],input[type=reset]{
+    width: 40%;
+    background-color: #620266;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+   -webkit-transition-duration: 0.7s; /* Safari */
+     transition-duration: 0.4s;
+     border: none;
+    color: white;
+}
+
+.register{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 40px;
+   margin:25px 60px 0px;;
+
+}
+
+.search input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #29074d;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+    <a id="home" href="./Userbuild.html">Home</a>
+    <a id="login" href="./AdminHome.html">Admin</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="RegisterUser.html">Register</a> </li>
+        <li><a href="showuser">View Users</a> </li>
+        <li><a href="SearchUser.html">Search User</a> </li>
+        <li><a href="UpdateUser.html">Update User</a> </li>
+        <li><a href="RemoveUser.html">Remove Users</a> </li>
+        <li><a onclick="popup()">Users Activities</a> </li>
+        <li><a onclick="popup()">Available Users</a> </li>
+        <li><a onclick="popup()">Removed Users</a> </li>
+        <li><a onclick="popup()">User Responsbility</a> </li>
+        <li><a onclick="popup()">Users Data Control</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+      <div class="left-line">
+
+      </div>
+      <div class="search">
+        <form class="" action="removeuserform" method="post">
+        <input type="text" name="userid" value="" placeholder="Enter User-ID">
+        <br>  <input type="submit" name="submit" value="Search Than Remove">
+        </form>
+    </div>
+    </div>
+    <div class="footer">
+      <a href="#">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./popup.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./resourses/lib/w3.css">
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+    }
+      .nav-top{
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+        width: auto;
+      background-color: #018e84;
+      }
+      .nav-top a{
+        text-decoration: none;
+      }
+      .nav-top a:hover{
+        background-color:#022926;
+      }
+      .nav-top #home{
+        padding:15px;
+        float: left;
+        color: #ffffff;
+      }
+      .nav-top #login{
+        padding:15px;
+        float: right;
+        color: #ffffff;
+      }
+  .side-nav{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    height: 91%;
+    left: 0px;
+    border: 0px solid black;
+  }
+  .side-nav ul{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    list-style-type: none;
+    background-color: #edfbfb;
+    text-align: center;
+  }
+  .s-menu li a{
+    display: block;
+    color: #000;
+    padding: 16px 10px 16px 10px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.7s; /* Safari */
+      transition-duration: 0.4s;
+  }
+  .s-menu li a:hover{
+    color: white;
+    background-color: #018e84;
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(1, 255, 245, 0.24),0 17px 50px 0 rgba(11, 255, 209, 0.58);
+  }
+
+
+.containter{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border-left: 5px solid #018e84;
+  left: 200px;
+  height: 85%;
+  width: 84%;
+   background-size: 100% 100%;
+  background-color:  #f1f1f1;
+  overflow: auto;
+}
+.footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 8%;
+  background-color: #018e84;
+  text-align: center;
+  padding-top: 15px;
+}
+.footer a{
+  text-decoration: none;
+  color: #fafaff;
+}
+
+#login{
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+}
+.register{
+  border-radius: 5px;
+   background-color: #f9fefd;
+   padding: 40px;
+   margin:0px 2px 0px;;
+}
+.register label{
+  width: auto;
+  font-weight: bold;
+}
+.register input[type=text],input[type=email],input[type=number]{
+  width: auto;
+    font-size: 14px;
+   padding: 12px 20px;
+   margin: 8px 0px;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+    background-color: #f4fffe;
+    font-weight: bold;
+}
+.register input[type=submit],input[type=reset]{
+    width: 40%;
+   background-color: #018e84;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+.register input[type=submit]:hover,input[type=reset]:hover {
+    background-color: #03756d;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 255, 255, 0.24),0 17px 50px 0 rgba(9, 248, 255, 0.19);
+
+}
+.year{
+  background-color: #033330;
+  color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+
+#ad{
+  text-align: center;
+}
+#submit{
+  margin-left: 60px;
+}
+#addressline{
+  width: 88%;
+}
+
+#city,#state{
+  margin-left: 45px;
+}
+#nation{
+    margin-left: -3px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+      <a id="home" href="./AdminHome.html">Home</a>
+      <a id="login" href="./index.html">Login</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="Admission.html">Adminssion</a> </li>
+        <li><a onclick="popup()">View Student</a> </li>
+        <li><a href="SearchStudent.html">Search Student</a> </li>
+        <li><a href="UpdateStudent.html">Update Student</a> </li>
+        <li><a href="RemoveStudent.html">Remove Student</a> </li>
+        <li><a onclick="popup()">View Attendance</a> </li>
+        <li><a onclick="popup()">Removed Student</a> </li>
+        <li><a onclick="popup()">Students  Activities</a> </li>
+        <li><a onclick="popup()">Fees Management</a> </li>
+        <li><a onclick="popup()">Student  Performance</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+    <div class="register">
+      <form action="admitstudent" method="post">
+        <div class="year">
+          <h3 id="ad">Admission 2019-20</h3>
+        </div>
+        <br>
+    <label for="fname">First Name&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter firstname">
+    <label for="lname">Midile Name&nbsp;&nbsp;</label>
+    <input type="text" id="lname" name="midilename" placeholder="Enter midile">
+    <label for="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter lastname">
+<br>
+<label for="lname">Father Name</label>
+<input type="text" id="lname" name="fathername" placeholder="Enter fathername">
+<label for="lname">Mother Name</label>
+<input type="text" id="lname" name="mothername" placeholder="Enter mothername">
+<label for="lname">Date of Birth</label>
+<input type="text" id="lname" name="dob" placeholder="dd/mm/yyyy">
+<br>
+  <label for="lname">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="gender" placeholder="Enter gender">
+  <label for="lname">Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="category" placeholder="Enter category">
+  <label for="lname">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="number" id="lname" name="age" placeholder="Enter age">
+<br>
+    <label for="lname">Email-ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="lname" name="email" placeholder="Enter email">
+    <label for="lname">Mobile No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" id="lname" name="mobile" placeholder="Enter mobile">
+    <label for="lname">Pincode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" id="lname" name="pincode" placeholder="Enter pincode">
+<br>
+<label for="lname">City&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="city" name="city"placeholder="Enter city">
+<label for="lname">State&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="state" name="state"placeholder="Enter state">
+<label for="lname">Nationality&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="nation" name="nationality"placeholder="Enter nation">
+<br>
+    <label for="lname">Address-1&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="addressline" name="address1"placeholder="Enter address">
+<br>
+    <label for="lname">Address-2&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="addressline" name="address2" placeholder="Enter address">
+  <br>
+  <label for="lname">Medium&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="medium" placeholder="Enter medium">
+
+  <label for="lname">Blood Group&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="bloodgroup" placeholder="Enter bloodgroup">
+<br>
+<br>
+<label for="lname">Last Institute Attended:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<br>
+<label for="lname">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="lastschool" placeholder="Enter schoolname">
+<label for="lname">Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="year" placeholder="Enter year">
+<label for="lname">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="lastclass" placeholder="Enter class">
+<br>
+<br>
+<label for="lname">Current Admit Class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<br>
+<label for="lname">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="class" placeholder="Enter class">
+<label for="lname">Section&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="section" placeholder="Enter section">
+<label for="lname">Group&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="group" placeholder="Enter group">
+<br>
+<br>
+<label for="lname">Documents Rqueired:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<br>
+<br>
+  <input id="submit" type="submit" value="Apply">
+  <input id="submit" type="reset" value="Reset">
+  </form>
+    </div>
+    </div>
+    <div class="footer">
+      <a href="#">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>

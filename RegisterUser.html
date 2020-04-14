@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./resourses/lib/w3.css">
+    <script src="./popup.js" charset="utf-8"></script>
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+    }
+    .nav-top{
+      height: 50px;
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      background-color: #620266;
+    }
+    .nav-top a{
+      text-decoration: none;
+    }
+    .nav-top a:hover{
+      background-color:#290029;
+    }
+    .nav-top #home{
+      padding:15px;
+      float: left;
+      color: #ffffff;
+    }
+    .nav-top #login{
+      padding:15px;
+      float: right;
+      color: #ffffff;
+    }
+  .side-nav{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: 91%;
+  left: 0px;
+  border: 0px solid black;
+  }
+  .side-nav ul{
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  list-style-type: none;
+  background-color: #f7dfff;
+  text-align: center;
+  }
+  .s-menu li a{
+  display: block;
+  color: #000;
+  padding: 16px 10px 16px 10px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .s-menu li a:hover{
+  color: white;
+  background-color: #620266;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(134, 7, 223, 0.58);
+  }
+
+
+  .containter{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border-left: 5px solid #620266;
+    left: 200px;
+    height: 85%;
+    width: 84.4%;
+     background-size: 100% 100%;
+    background-color:  #f1f1f1;
+    background-image: url("./img/UserManagement.jpg");
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 8%;
+    background-color:#620266;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .footer a{
+    text-decoration: none;
+    color: #fafaff;
+  }
+.register{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 40px;
+   margin:25px 60px 0px;;
+
+}
+.register label{
+  width: auto;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.register input[type=text],input[type=email],input[type=number],input[type=password]{
+  width: auto;
+  font-size: 18px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.register input[type=submit],input[type=reset]{
+  width: 30%;
+ background-color: #620266;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ font-size: 18px;
+ -webkit-transition-duration: 0.7s; /* Safari */
+   transition-duration: 0.4s;
+   border: none;
+  color: white;
+}
+
+.register input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #29074d;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#submit,#Reset{
+  width: 20%;
+  margin-left: 20%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+    <a id="home" href="./Userbuild.html">Home</a>
+    <a id="login" href="./AdminHome.html">Admin</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="RegisterUser.html">Register</a> </li>
+        <li><a href="showuser">View Users</a> </li>
+        <li><a href="SearchUser.html">Search User</a> </li>
+        <li><a href="UpdateUser.html">Update User</a> </li>
+        <li><a href="RemoveUser.html">Remove Users</a> </li>
+        <li><a onclick="popup()">Users Activities</a> </li>
+        <li><a onclick="popup()">Available Users</a> </li>
+        <li><a onclick="popup()">Removed Users</a> </li>
+        <li><a onclick="popup()">User Responsbility</a> </li>
+        <li><a onclick="popup()">Users Data Control</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+    <div class="register">
+      <form action="registeruser" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter firstname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter lastname">
+<br>
+    <label for="lname">Email-ID &nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="lname" name="email" placeholder="Enter email">
+
+    <label for="lname">Mobile No&nbsp;</label>
+    <input type="number" id="lname" name="mobile" placeholder="Enter mobile">
+<br>
+    <label for="lname">Username&nbsp;</label>
+    <input type="text" id="lname" name="username"placeholder="Enter username">
+
+    <label for="lname">Password&nbsp;</label>
+    <input type="password" id="lname" name="password" placeholder="Enter password">
+  <br>
+  <label for="lname">Address&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="address" placeholder="Enter address">
+
+  <label for="lname">Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="place" placeholder="Enter place">
+<br>
+<br>
+  <input id="submit" type="submit" value="Register"><input id="Reset" type="reset" value="Reset">
+  </form>
+    </div>
+    <div class="right-content">
+
+    </div>
+    </div>
+    <div class="footer">
+      <a href="www.apsu.ac.in">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./resourses/lib/w3.css">
+    <script src="./popup.js" charset="utf-8"></script>
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+    }
+    .nav-top{
+      height: 50px;
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      background-color: #3d03a8;
+    }
+    .nav-top a{
+      text-decoration: none;
+    }
+    .nav-top a:hover{
+      background-color:#0f0226;
+    }
+    .nav-top #home{
+      padding:15px;
+      float: left;
+      color: #ffffff;
+    }
+    .nav-top #login{
+      padding:15px;
+      float: right;
+      color: #ffffff;
+    }
+.side-nav{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: 91%;
+  left: 0px;
+  border: 0px solid black;
+}
+.side-nav ul{
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  list-style-type: none;
+  background-color: #e3e9fc;
+  text-align: center;
+}
+.s-menu li a{
+  display: block;
+  color: #000;
+  padding: 16px 10px 16px 10px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.4s;
+}
+.s-menu li a:hover{
+  color: white;
+  background-color: #3d03a8;
+  box-shadow: 0 12px 16px 0 rgba(0, 13, 255, 0.24),0 17px 50px 0 rgba(2, 0, 250, 0.58);
+}
+
+
+  .containter{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border-left: 5px solid #3d03a8;
+    left: 200px;
+    height: 85%;
+    width: 84.4%;
+     background-size: 100% 100%;
+    background-color:  #f1f1f1;
+    background-image: url("./img/AMHome.png");
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 8%;
+    background-color:#3d03a8;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .footer a{
+    text-decoration: none;
+    color: #fafaff;
+  }
+.register{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 40px;
+   margin:25px 60px 0px;;
+}
+.register label{
+  width: auto;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.register input[type=text],input[type=email],input[type=number],input[type=password]{
+  width: auto;
+  font-size: 18px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.register input[type=submit],input[type=reset]{
+    width: 40%;
+   background-color:  #3d03a8;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+   -webkit-transition-duration: 0.7s; /* Safari */
+     transition-duration: 0.4s;
+     border: none;
+    color: white;
+}
+
+.register input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #000b44;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#submit,#Reset{
+  width: 20%;
+  margin-left: 20%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+    <a id="home" href="./AdminBuild.html">Home</a>
+    <a id="login" href="./AdminHome.html">Admin</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="RegisterAdmin.html">Register</a> </li>
+        <li><a href="showadmin">View Admins</a> </li>
+        <li><a href="SearchAdmin.html">Search Admin</a> </li>
+        <li><a href="UpdateAdmin.html">Update Admin</a> </li>
+        <li><a href="RemoveAdmin.html">Remove Admins</a></li>
+        <li><a onclick="popup()">Admins Activities</a> </li>
+        <li><a onclick="popup()">Available Admins</a> </li>
+        <li><a onclick="popup()">Removed Admin</a> </li>
+        <li><a onclick="popup()">Admin Responsbility</a> </li>
+        <li><a onclick="popup()">Admins Data Control</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+    <div class="register">
+      <form action="registeradmin" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter firstname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter lastname">
+<br>
+    <label for="lname">Email-ID &nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="email" name="email" placeholder="Enter email">
+
+    <label for="lname">Mobile No&nbsp;</label>
+    <input type="number" id="mobile" name="mobile" placeholder="Enter mobile">
+    <br>
+    <label for="lname">Address&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="address" name="address" placeholder="Enter address">
+
+    <label for="lname">Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="place" name="place" placeholder="Enter place">
+    <br>
+    <label for="lname">Username&nbsp;</label>
+    <input type="text" id="username" name="username"placeholder="Enter adminname">
+
+    <label for="lname">Password&nbsp;</label>
+    <input type="password" id="password" name="password" placeholder="Enter password">
+<br>
+<br>
+  <input id="submit" type="submit" value="Register"><input id="Reset" type="reset" value="Reset">
+  </form>
+    </div>
+    </div>
+    <div class="footer">
+      <a href="www.apsu.ac.in">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<web-app>
+
+  <servlet>
+    <servlet-name>s</servlet-name>
+    <servlet-class>com.CreateAccount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s</servlet-name>
+    <url-pattern>/createaccount</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>s1</servlet-name>
+  <servlet-class>com.AdminLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s1</servlet-name>
+  <url-pattern>/Admin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s2</servlet-name>
+  <servlet-class>com.UserLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s2</servlet-name>
+  <url-pattern>/User</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s3</servlet-name>
+  <servlet-class>com.RegisterAdmin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s3</servlet-name>
+  <url-pattern>/registeradmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s4</servlet-name>
+  <servlet-class>com.RegisterUser</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s4</servlet-name>
+  <url-pattern>/registeruser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s5</servlet-name>
+  <servlet-class>com.ShowUser</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s5</servlet-name>
+  <url-pattern>/showuser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s6</servlet-name>
+  <servlet-class>com.ShowAdmin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s6</servlet-name>
+  <url-pattern>/showadmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s7</servlet-name>
+  <servlet-class>com.SearchAdmin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s7</servlet-name>
+  <url-pattern>/searchadmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s8</servlet-name>
+  <servlet-class>com.SearchUser</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s8</servlet-name>
+  <url-pattern>/searchuser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s9</servlet-name>
+  <servlet-class>com.UpdateAdminForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s9</servlet-name>
+  <url-pattern>/updateadminform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s10</servlet-name>
+  <servlet-class>com.UpdateAdmin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s10</servlet-name>
+  <url-pattern>/updateadmin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>s11</servlet-name>
+  <servlet-class>com.UpdateUserForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s11</servlet-name>
+  <url-pattern>/updateuserform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s12</servlet-name>
+  <servlet-class>com.UpdateUser</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s12</servlet-name>
+  <url-pattern>/updateuser</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>s13</servlet-name>
+  <servlet-class>com.RemoveAdminForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s13</servlet-name>
+  <url-pattern>/removeadminform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s14</servlet-name>
+  <servlet-class>com.RemoveAdmin</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s14</servlet-name>
+  <url-pattern>/removeadmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s15</servlet-name>
+  <servlet-class>com.RemoveUserForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s15</servlet-name>
+  <url-pattern>/removeuserform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s16</servlet-name>
+  <servlet-class>com.RemoveUser</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s16</servlet-name>
+  <url-pattern>/removeuser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s17</servlet-name>
+  <servlet-class>com.RegisterTeacher</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s17</servlet-name>
+  <url-pattern>/registerteacher</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>s18</servlet-name>
+  <servlet-class>com.ShowTeacher</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s18</servlet-name>
+  <url-pattern>/showteacher</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>s19</servlet-name>
+  <servlet-class>com.SearchTeacher</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s19</servlet-name>
+  <url-pattern>/searchteacher</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s20</servlet-name>
+  <servlet-class>com.UpdateTeacherForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s20</servlet-name>
+  <url-pattern>/updateteacherform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s21</servlet-name>
+  <servlet-class>com.UpdateTeacher</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s21</servlet-name>
+  <url-pattern>/updateteacher</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s22</servlet-name>
+  <servlet-class>com.RemoveTeacherForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s22</servlet-name>
+  <url-pattern>/removeteacherform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s23</servlet-name>
+  <servlet-class>com.RemoveTeacher</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s23</servlet-name>
+  <url-pattern>/removeteacher</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+  <servlet-name>s24</servlet-name>
+  <servlet-class>com.RegisterEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s24</servlet-name>
+  <url-pattern>/registeremployee</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>s25</servlet-name>
+  <servlet-class>com.ShowEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s25</servlet-name>
+  <url-pattern>/showemployee</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>s26</servlet-name>
+  <servlet-class>com.SearchEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s26</servlet-name>
+  <url-pattern>/searchemployee</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s27</servlet-name>
+  <servlet-class>com.UpdateEmployeeForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s27</servlet-name>
+  <url-pattern>/updateemployeeform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s28</servlet-name>
+  <servlet-class>com.UpdateEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s28</servlet-name>
+  <url-pattern>/updateemployee</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s29</servlet-name>
+  <servlet-class>com.RemoveEmployeeForm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s29</servlet-name>
+  <url-pattern>/removeemployeeform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s30</servlet-name>
+  <servlet-class>com.RemoveEmployee</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s30</servlet-name>
+  <url-pattern>/removeemployee</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s31</servlet-name>
+  <servlet-class>com.AdmitStudent</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>s31</servlet-name>
+  <url-pattern>/admitstudent</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+</welcome-file-list>
+
+</web-app>

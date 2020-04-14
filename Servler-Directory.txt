@@ -1,0 +1,7 @@
+  //////////////////////////////////////////////////////
+Admin Home When Server Start:
+////////////////////////////////////////////////////////
+  <a href="./Admin/User/Userbuild.html">Userbuild</a>
+  <a href="./Admin/Teacher/Teacher.html">Teacher</a>
+  <a href="./Admin/Employee/Employee.html">Emplyee</a>
+  <a href="./Admin/Student/Student.html">Student</a>

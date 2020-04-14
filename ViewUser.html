@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./resourses/lib/w3.css">
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      .nav-top{
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+        width: auto;
+        background-color: #620266;
+      }
+      .nav-top a{
+        text-decoration: none;
+      }
+      .nav-top a:hover{
+        background-color:#290029;
+      }
+      .nav-top #home{
+        padding:15px;
+        float: left;
+        color: #ffffff;
+      }
+      .nav-top #login{
+        padding:15px;
+        float: right;
+        color: #ffffff;
+      }
+  .side-nav{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    height: 91%;
+    left: 0px;
+    border: 0px solid black;
+  }
+  .side-nav ul{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    list-style-type: none;
+    background-color: #f7dfff;
+    text-align: center;
+  }
+  .s-menu li a{
+    display: block;
+    color: #000;
+    padding: 16px 10px 16px 10px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.7s; /* Safari */
+      transition-duration: 0.4s;
+  }
+  .s-menu li a:hover{
+    color: white;
+    background-color: #620266;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(134, 7, 223, 0.58);
+  }
+
+
+    .containter{
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      border-left: 5px solid #620266;
+      left: 200px;
+      height: 85%;
+      width: 84%;
+      background-size: 100% 100%;
+      background-color:  #f1f1f1;
+      background-image: url("./img/UserManagement.jpg");
+      overflow: auto;
+    }
+
+  .footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 8%;
+    background-color:#620266;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .footer a{
+    text-decoration: none;
+    color: #fafaff;
+  }
+
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+      <a id="home" href="./userbuild.html">Home</a>
+      <a id="login" href="./AdminHome.html">Admin</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="RegisterUser.html">Register</a> </li>
+        <li><a href="showuser">View Users</a> </li>
+        <li><a href="SearchUser.html">Search User</a> </li>
+        <li><a href="UpdateUser.html">Update User</a> </li>
+        <li><a href="RemoveUser.html">Remove Users</a> </li>
+        <li><a href="UserActivity.html">Users Activities</a> </li>
+        <li><a href="ViewUser.html">Available Users</a> </li>
+        <li><a href="RemovUser.html">Removed Users</a> </li>
+        <li><a href="UserResponsible.html">User Responsbility</a> </li>
+        <li><a href="UserControl.html">Users Data Control</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+      <div class="w3-content">
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Kamlesh.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. KAMLESH PRASAD KARPENTAR</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: kamlesh@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Police Line Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: kamlesh</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Kamlesh.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. SANDEEP KUMAR KHUSHWAHA</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: sandeep@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Sirmour Chowk Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: sandeep</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Abhinav.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. ABHINAV KUMAR PANDEY</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: abhinav@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Nirala Nagar Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: abhinav</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Deepak.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. DEEPAK KUMAR SAKET</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: deepak@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Bypass Road Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: deepak</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Anoop.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR ANOOP KUMAR SODHIYA</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: anoop@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Semariya Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: anoop</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Ansh.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. ANSH DWIVEDI</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: ansh@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: JP Road Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: ansh</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Mohit.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR MOHIT AGRAWAL</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: mohit@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Bus Stand Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: mohit</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/AmarDeep.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR AMARDEEP SAKET</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: amar@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Azad Nagar Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: amar</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Swatantra.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. SWATANTRA MISHRA</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: swatantra@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: New Bus Stand Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: swatantra</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Abhishek.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. ABHISHEK SHRIVASTAV</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: abhishek@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Chirahula Colony Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: abhishek</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Sanjay.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. SANJAY TIWARI</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: sanjay@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: Bajrang Nagar Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: sanjay</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+      <div class="w3-row w3-margin w3-card-12 w3-light-grey" >
+      <div class="w3-third">
+        <img src="./img/Nandkishan.jpg" style="width:85%; max-height:300px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>MR. NANDKISHAN NAMDEV</h2>
+        <h4>Email-ID &nbsp;&nbsp;&nbsp;: kishan@gmail.com</h4>
+        <h4>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 7869471711</h4>
+        <h4>Address &nbsp;&nbsp;&nbsp;: APSU Rewa M.P</h4>
+        <h4>Place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rewa</h4>
+        <h4>Username&nbsp;: kishan</h4>
+        <h4>Password&nbsp;&nbsp;: *********</h4>
+      </div>
+      </div>
+
+
+
+      </div>
+      </div>//container
+    <div class="footer">
+      <a href="#">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>

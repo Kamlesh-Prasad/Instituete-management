@@ -1,0 +1,214 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.nav-top{
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  background-color: #3d03a8;
+}
+.nav-top a{
+  text-decoration: none;
+}
+.nav-top a:hover{
+  background-color:#0f0226;
+}
+.nav-top #home{
+  padding:15px;
+  float: left;
+  color: #ffffff;
+}
+.nav-top #login{
+  padding:15px;
+  float: right;
+  color: #ffffff;
+}
+.side-nav{
+position: absolute;
+margin: 0px;
+padding: 0px;
+height: 91%;
+left: 0px;
+border: 0px solid black;
+}
+.side-nav ul{
+margin: 0px;
+padding: 0px;
+width: 200px;
+list-style-type: none;
+background-color: #e3e9fc;
+text-align: center;
+}
+.s-menu li a{
+display: block;
+color: #000;
+padding: 16px 10px 16px 10px;
+text-decoration: none;
+-webkit-transition-duration: 0.7s; /* Safari */
+transition-duration: 0.4s;
+}
+.s-menu li a:hover{
+color: white;
+background-color: #3d03a8;
+box-shadow: 0 12px 16px 0 rgba(0, 13, 255, 0.24),0 17px 50px 0 rgba(2, 0, 250, 0.58);
+}
+
+
+.containter{
+position: absolute;
+margin: 0px;
+padding: 0px;
+border-left: 5px solid #3d03a8;
+left: 200px;
+height: 85%;
+width: 84.4%;
+background-size: 100% 100%;
+background-color:  #f1f1f1;
+overflow: auto;
+}
+
+.footer{
+position: absolute;
+bottom: 0%;
+width: 100%;
+height: 8%;
+background-color:#3d03a8;
+text-align: center;
+padding-top: 15px;
+}
+.footer a{
+text-decoration: none;
+color: #fafaff;
+}
+.search{
+  display: block;
+}
+
+.search input[type=text]{
+    width: 50%;
+    margin: 10px 40px;
+    box-sizing: border-box;
+    border: 2px solid #620266;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    background-image: url('./img/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search input[type=text]:focus{
+    width: 80%;
+}
+
+.search input[type=submit],input[type=reset]{
+    width: 40%;
+   background-color: #300132;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+   -webkit-transition-duration: 0.7s; /* Safari */
+     transition-duration: 0.4s;
+     border: none;
+    color: white;
+}
+
+.search input[type=submit]:hover,input[type=reset]:hover{
+      background-color: #160217;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(170, 0, 250, 0.24),0 17px 50px 0 rgba(198, 8, 255, 0.19);
+}
+
+table#usertable {
+font-size:14px;
+font-family:sans-serif;
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+background-color: #e6e9ff;
+text-align: center;
+}
+#usertable td, #usertable th {
+border: 1px solid #000252;
+text-align: left;
+padding: 8px;
+width:100px;
+}
+#usertable tr:hover{
+  background-color: #fff390;
+  padding: 20px;
+  color: black;
+}
+#usertable tr:nth-child(even){background-color: #f2f2f2;}
+#usertable tr:nth-child(even):hover{background-color: #fff390;}
+
+#usertable th {
+padding-top: 11px;
+padding-bottom: 11px;
+background-color: #000252;
+color: white;
+text-align: center;
+font-weight: bold;
+}
+
+.register{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 40px;
+   margin:25px 60px 0px;;
+}
+.register label{
+  width: auto;
+  font-weight: bold;
+}
+.register input[type=text],input[type=email],input[type=number],input[type=password]{
+  width: auto;
+  font-size: 18px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.register input[type=submit],input[type=reset]{
+    width: 40%;
+   background-color: #3d03a8;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+   -webkit-transition-duration: 0.7s; /* Safari */
+     transition-duration: 0.4s;
+     border: none;
+    color: white;
+}
+
+.register input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #000b44;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#submit,#Reset{
+  width: 20%;
+  margin-left: 10%;
+}
+#remove{
+  width: 40%;
+  margin-left: 30%;
+}

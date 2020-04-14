@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Home</title>
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background-image: url("./img/cit.jpg");
+      background-color: #adeeed;
+      font-family: sans-serif;
+      margin: 0px;
+      padding: 0px;
+    }
+    .nav-top{
+      height: 50px;
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      background-color: rgb(26, 96, 51);
+    }
+    .nav-top a{
+      text-decoration: none;
+    }
+    .nav-top a:hover{
+      background-color:#c2b4c2;
+    }
+    .nav-top #home{
+      padding:15px;
+      float: left;
+      color: #ffffff;
+    }
+    .nav-top #login{
+      padding:15px;
+      float: right;
+      color: #ffffff;
+    }
+.side-nav{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: 91%;
+  left: 0px;
+  border: 0px solid black;
+}
+.side-nav ul{
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  list-style-type: none;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.s-menu li a{
+  display: block;
+  color: #000;
+  padding: 20px 10px 20px 10px;
+  text-decoration: none;
+}
+.s-menu li a:hover{
+  color: white;
+  background-color: #555;
+}
+
+.containter{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  left: 200px;
+  width: auto;
+}
+.footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 15%;
+  background-color:  #000;
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  color: #fafaff;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  text-align: center;
+}
+.register{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 40px;
+   margin:25px 60px 0px;;
+}
+.register label{
+  width: auto;
+  font-weight: bold;
+}
+.register input[type=text],input[type=email],input[type=number]{
+  width: auto;
+  font-size: 18px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.register input[type=submit]{
+    width: 40%;
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+.register input[type=submit]:hover {
+    background-color: #0e290f;
+    color: white;
+}
+
+#submit{
+  margin-left: 40px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+    <a id="home" href="../UserHome.html">Home</a>
+    <a id="login" href="#">Login</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="RegisterEmp.html">Register</a> </li>
+        <li><a href="showuser">Show Emp</a> </li>
+          <li><a href="searchuser">Search Emp</a> </li>
+        <li><a href="updateuser">Update Emp</a> </li>
+        <li><a href="useractivity">Emp Activity</a> </li>
+        <li><a href="usercontrol">Emp Control</a> </li>
+        <li><a href="removeuser">Remove Emp</a> </li>
+        <li><a href="removeduser">Emp Removed</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+    <div class="register">
+      <form action="registerteacher" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter firstname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter lastname">
+<br>
+    <label for="lname">Email-ID &nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="lname" name="email" placeholder="Enter email">
+
+    <label for="lname">Mobile No&nbsp;</label>
+    <input type="number" id="lname" name="mobile" placeholder="Enter mobile">
+<br>
+    <label for="lname">Salary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="lname" name="salary"placeholder="Enter salary">
+
+    <label for="lname">DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="lname" name="subject" placeholder="dd/mm/yyyy">
+  <br>
+  <label for="lname">Address&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="address" placeholder="Enter address">
+
+  <label for="lname">Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="place" placeholder="Enter place">
+<br>
+<br>
+  <input id="submit" type="submit" value="Register"><input id="submit" type="submit" value="Reset">
+  </form>
+
+    </div>
+    </div>
+    <div class="footer">
+      <a href="#">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>

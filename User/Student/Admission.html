@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Home</title>
+    <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background-image: url("./img/cit.jpg");
+      background-color: #adeeed;
+      font-family: sans-serif;
+      margin: 0px;
+      padding: 0px;
+    }
+    .nav-top{
+      height: 50px;
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      background-color: rgb(26, 96, 51);
+    }
+    .nav-top a{
+      text-decoration: none;
+    }
+    .nav-top a:hover{
+      background-color:#c2b4c2;
+    }
+    .nav-top #home{
+      padding:15px;
+      float: left;
+      color: #ffffff;
+    }
+    .nav-top #login{
+      padding:15px;
+      float: right;
+      color: #ffffff;
+    }
+.side-nav{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: 91%;
+  left: 0px;
+  border: 0px solid black;
+}
+.side-nav ul{
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  list-style-type: none;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.s-menu li a{
+  display: block;
+  color: #000;
+  padding: 20px 10px 20px 10px;
+  text-decoration: none;
+}
+.s-menu li a:hover{
+  color: white;
+  background-color: #555;
+}
+
+.containter{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  left: 200px;
+  width: auto;
+}
+/*
+.footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 15%;
+  background-color:  #000;
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  color: #fafaff;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  text-align: center;
+}*/
+.register{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 40px;
+   margin:0px 2px 0px;;
+}
+.register label{
+  width: auto;
+  font-weight: bold;
+}
+.register input[type=text],input[type=email],input[type=number]{
+  width: auto;
+    font-size: 14px;
+   padding: 12px 20px;
+   margin: 8px 0px;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.register input[type=submit]{
+    width: 40%;
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+.register input[type=submit]:hover {
+    background-color: #0e290f;
+    color: white;
+}
+.year{
+  background-color: #304e88;
+  color: white;
+  border: 2px solid black;
+}
+
+
+#ad{
+  text-align: center;
+}
+#submit{
+  margin-left: 60px;
+}
+#addressline{
+  width: 88%;
+}
+
+#city,#state{
+  margin-left: 45px;
+}
+#nation{
+    margin-left: -3px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav-top">
+    <a id="home" href="../UserHome.html">Home</a>
+    <a id="login" href=".../index.html">Login</a>
+    </div>
+    <div class="side-nav">
+      <ul class="s-menu">
+        <li><a href="Admission.html">Admission</a> </li>
+        <li><a href="Scholership.html">Shcolership</a> </li>
+          <li><a href="FeeStatus.html">Fee Status</a> </li>
+        <li><a href="Erollment,html">Erollment</a> </li>
+        <li><a href="Update.html">Update</a> </li>
+        <li><a href="Remove.html">Remove</a> </li>
+        <li><a href="Search.html">Search</a> </li>
+        <li><a href="Activity.html">Activity</a> </li>
+        <li><a href="Activity.html">Sport</a> </li>
+        <li><a href="Activity.html">Activity</a> </li>
+        <li><a href="Activity.html">Activity</a> </li>
+      </ul>
+    </div>
+    <div class="containter">
+    <div class="register">
+      <form action="registerteacher" method="post">
+        <div class="year">
+          <h1 id="ad">Admission 2019-20</h1>
+        </div>
+        <br>
+    <label for="fname">First Name&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter firstname">
+    <label for="lname">Midile Name&nbsp;&nbsp;</label>
+    <input type="text" id="lname" name="midilename" placeholder="Enter midile">
+    <label for="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter lastname">
+<br>
+<label for="lname">Father Name</label>
+<input type="text" id="lname" name="fathername" placeholder="Enter fathername">
+<label for="lname">Mother Name</label>
+<input type="text" id="lname" name="mothername" placeholder="Enter mothername">
+<label for="lname">Date of Birth</label>
+<input type="text" id="lname" name="dob" placeholder="dd/mm/yyyy">
+<br>
+  <label for="lname">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="gender" placeholder="Enter gender">
+  <label for="lname">Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="category" placeholder="Enter category">
+  <label for="lname">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="number" id="lname" name="age" placeholder="Enter age">
+<br>
+    <label for="lname">Email-ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="lname" name="email" placeholder="Enter email">
+    <label for="lname">Mobile No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" id="lname" name="mobile" placeholder="Enter mobile">
+    <label for="lname">Pincode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" id="lname" name="pincode" placeholder="Enter pincode">
+<br>
+<label for="lname">City&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="city" name="city"placeholder="Enter city">
+<label for="lname">State&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="state" name="state"placeholder="Enter state">
+<label for="lname">Nationality&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="nation" name="nationality"placeholder="Enter nation">
+<br>
+    <label for="lname">Address-1&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="addressline" name="address1"placeholder="Enter address">
+<br>
+    <label for="lname">Address-2&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="addressline" name="address2" placeholder="Enter address">
+  <br>
+  <label for="lname">Medium&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="medium" placeholder="Enter medium">
+
+  <label for="lname">Blood Group&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="bloodgroup" placeholder="Enter bloodgroup">
+<br>
+<br>
+<label for="lname">Last Institute Attended:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<br>
+<label for="lname">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="lastschool" placeholder="Enter schoolname">
+<label for="lname">Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="year" placeholder="Enter year">
+<label for="lname">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="lastclass" placeholder="Enter class">
+<br>
+<br>
+<label for="lname">Current Admit Class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<br>
+<label for="lname">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="class" placeholder="Enter class">
+<label for="lname">Section&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="section" placeholder="Enter section">
+<label for="lname">Group&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="lname" name="group" placeholder="Enter group">
+<br>
+<br>
+<label for="lname">Documents Rqueired:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<br>
+<br>
+  <input id="submit" type="submit" value="Apply">
+  <input id="submit" type="submit" value="Reset">
+  </form>
+    </div>
+    </div>
+    <div class="footer">
+      <a href="#">www.apsu.ac.in</a>
+    </div>
+  </body>
+</html>
